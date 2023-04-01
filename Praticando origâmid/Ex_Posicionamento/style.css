@@ -49,6 +49,13 @@ p {
     border-radius: 4px;
     color: #000000;
     text-transform: uppercase;
+    border: 2px solid #fff;
+}
+
+.menu a:hover {
+    border-color: #e21;
+    transition: .3s;
+
 }
 
 .conteudo {
@@ -68,7 +75,8 @@ p {
     justify-items: end;
 }
 
-.detalhe {
+.intro::before {
+    content: '';
     width: 60px;
     height: 4px;
     background: #e21;
@@ -87,6 +95,12 @@ h1{
     padding: 1rem 2rem;
     border-radius: 4px;
     text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #c11;
+    transition: .3s;
+
 }
 
 .subtitle {
@@ -109,6 +123,15 @@ h1{
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
     padding: 20px;
+}
+
+.vantagens-item:hover{
+    border-left: 4px solid #e21;
+    transition: .1s;
+}
+
+.vantagens-item:nth-child(odd) {
+    background: #f7f7f7;
 }
 
 .vantagens-item p {
