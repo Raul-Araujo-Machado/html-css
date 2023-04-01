@@ -1,0 +1,1 @@
+Exercício para praticar tecnicas de posicionamento (flexbox,grid), html semântico, pseudo classes/elementos e responsividade.
