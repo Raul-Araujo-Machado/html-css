@@ -4,124 +4,119 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #f5f5f5;
+body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background: #f7f7f7;
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    margin-top: 60px;
+}
+
+header{
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+}
+  
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu a {
+    background: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+}
+
+.intro {
+    background: #fff;
+    padding: 40px;
+    text-align: right;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    align-content: center;
+    justify-items: end;
+}
+
+.detalhe {
+    width: 60px;
+    height: 4px;
+    background: #e21;
+    position: absolute;
+    top: 30px;
+    right: -30px;
 }
 
 h1{
-    text-align: center;
-    padding: 55px;
-    font-size: 2.4em;
+    font-size:2em;
 }
 
-.menu{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.menu li{
-    list-style: none;
-    padding: 15px 20px;
+.btn {
+    background: #e21;
+    color: #fff;
+    padding: 15px 30px;
     border-radius: 4px;
-    background-color: white;
-}
-
-.menu a{
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
-    padding: 10px;
     text-transform: uppercase;
 }
 
-section{
+.subtitle {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center;
+}
+
+.vantagens {
+    background: #fff;
+    padding: 40px;
+}
+
+.vantagens-item {
     display: grid;
-    padding-top: 55px;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 400px 400px 400px;
-    justify-content: center;
-}
-
-section h2{
-    font-size: 1.8em;
-    text-align: right;
-    padding: 20px 0;
-}
-
-.sob{
-    font-size: 1.3em;
-    text-align: right;
-    margin-left: 20px;
-}
-
-.sobre{
-    display: flex;
-    margin-top: 60px;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-}
-
-.btnVM{
-    display: inline-block;
-    background-color: #ee2211;
-    color: white;
-    border-radius: 4px;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-top: 20px;
-}
-
-.cellWhite{
-    background-color: white;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
     padding: 20px;
 }
 
-
-.bik{
-    width: 500px;
-    height: 400px;
-    object-fit: cover;
+.vantagens-item p {
+    grid-column: 2;
 }
 
-.tvant{
-    color: #c6c6c6;
-    font-size: 4em;
-    text-transform: uppercase;
-    text-align: right;
-    margin:auto 0;
-}
-
-.vantagens{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.vantagem{
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    max-width: 400px;
-
-}
-
-h3{
-    padding-bottom: 20px;
-}
-
-p{
-    font-size: 1.2em;
-}
-
-footer{
-    grid-column: 1/3;
-    justify-self: center;
-    background-color: white;
+footer {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
 }
