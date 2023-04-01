@@ -20,9 +20,15 @@ header{
     justify-items: center;
 }
   
+.intro-cover img{
+    object-fit: cover;
+    height: 100%;
+}
+
 img {
     max-width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 a {
@@ -44,6 +50,7 @@ p {
 }
 
 .menu a {
+    display: inline-block;
     background: #ffffff;
     padding: 1rem 2rem;
     border-radius: 4px;
@@ -55,7 +62,6 @@ p {
 .menu a:hover {
     border-color: #e21;
     transition: .3s;
-
 }
 
 .conteudo {
@@ -143,4 +149,41 @@ footer {
     width: 100%;
     text-align: center;
     padding: 40px;
+}
+
+@media (max-width: 1000px) {
+    .conteudo-vantagem{
+        grid-template-columns: 1fr;
+    }
+    .subtitle{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    body{
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    header{
+        gap: 15px;
+    }
+
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+
+    .intro{
+        text-align: left;
+        justify-items: start;
+    }
+
+    .intro::before{
+        display: none;
+    }
+
+    .subtitle{
+        font-size: 3rem;
+    }
 }
